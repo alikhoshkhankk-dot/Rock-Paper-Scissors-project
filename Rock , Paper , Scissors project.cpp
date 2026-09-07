@@ -17,7 +17,10 @@ int determineRoundWinner(int player, int computer);
 void displayRoundResult(int player, int computer, int result);
 void displayFinalResults(int playerWins, int computerWins, int ties);
 
-int main()   //Play Rock Paper Scissors
+// Play rock Paper Scissors
+// Start the game
+
+int main()   
 {
     srand(time(0));
 
@@ -27,6 +30,8 @@ int main()   //Play Rock Paper Scissors
     int playerWins = 0;
     int computerWins = 0;
     int ties = 0;
+
+    // Show the game menu
 
     do
     {
@@ -73,6 +78,7 @@ void displayMenu()
     cout << "4. Quit" << endl;
 }
 
+// Get the player's choice
 
 int getPlayerChoice()
 {
@@ -90,6 +96,7 @@ int getPlayerChoice()
     return choice;
 }
 
+// Get a random choice for the computer
 
 int getComputerChoice()
 {
@@ -154,6 +161,8 @@ void displayRoundResult(int player, int computer, int result)
     }
 }
 
+
+// Show the final tournament results
 
 void displayFinalResults(int playerWins, int computerWins, int ties)
 {
